@@ -1,0 +1,376 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+html, body, ul, ol {
+font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+line-height:1.5;
+}
+
+body {
+  background-color: #fff;
+  padding:0px;
+  margin:0px;
+}
+
+div,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+
+p {
+  font-weight:normal;
+  margin:.5em;
+
+}
+
+.header {
+  margin:0;
+  width:100%;
+  padding:0px 20px;
+  background-color: $brand-color-a;
+  height:50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  clear: left;
+  
+ } 
+
+
+.logo-container {
+    width:92px;
+    height:23px;
+    background-image: url("../img/myprotein-global-sprite.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 -90px;
+
+
+  }
+
+
+.breadcrumbs {
+  margin:0px;
+  height:35px;
+  color: #696969;
+  font-size:12px;
+  padding-left:20px;
+
+  p {  @include vertical-align();
+    }
+}
+
+.rule {
+  background-color: #cccccc;
+  width:100%;
+  height:2px;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.product-title {
+  background-color: $brand-color-a;
+  height:63px;
+  margin:0px;
+ 
+ h1 {
+  font-size:16px;
+  font-weight:400;
+  color: #fff;
+  padding-left:20px;
+  @include vertical-align();
+  margin:0px;
+  text-transform: uppercase; 
+ }
+}
+
+.product-subtitle {
+  width:250px;
+  margin:0px;
+  height:30px;
+  padding-left:20px;
+  float:left;
+
+  
+  h2 {
+    margin:0;
+    padding:5px 0 0;
+    font-size:14px;
+    font-weight: 500;
+  }
+}
+
+.diet-icons{
+  margin:0;
+  padding:2px 0px; 
+  width:58px; 
+  float:left;
+
+
+  ul{
+    width:25px;
+    height:25px;
+    padding:0; 
+    margin:0; 
+    list-style:none; 
+    border:0; 
+    float:left;
+  }
+
+  li{
+    width:25px;
+    height:25px;
+    padding:0; 
+    margin:0 2px 0 2px; 
+    list-style:none; 
+    border:0; 
+    float:left;
+  }
+}
+
+.icon-glutten-free {
+    width:25px;
+    height:25px;
+    background-image: url("../img/sprite.png");
+    background-color: transparent;
+    background-position: -243px -587px;
+
+
+}
+
+.icon-vegitarian {
+    width:25px;
+    height:25px;
+    background-image: url("../img/sprite.png");
+    background-color: transparent;
+    background-position: -595px -62px;
+}
+
+
+.product-image {
+  max-width:1200px;
+  margin: 20px;
+  border: 1px solid #dcdcdc;
+  text-align: center;
+  
+  img{
+    border:none;
+    width:300px;
+    height:300px;
+    margin: auto;
+  }
+}
+
+.product-info {
+  max-width:1200px;
+  text-align: center;
+   
+    .was {
+      color:#817d7e;
+      font-weight:400;
+      padding:0 5px;
+    }
+    .strike {
+      text-decoration: line-through;
+    }
+    .save {
+      color:red;
+      font-weight:400;
+      padding:0 5px;
+    }
+  
+  .price {
+    text-align: center;
+    margin:0;
+    color:$brand-color-a;
+    font-size:20px;
+    font-weight:600;
+  }
+
+}
+
+.rating {
+    max-width:1200px;
+    text-align: center;
+    margin: auto;
+    width:75px;
+    height:14px;
+    font-size:12px;
+    font-weight:200;
+}
+
+.rating-stars-container {
+    margin: auto;
+    width:75px;
+    height:14px;
+    background-image: url("../img/myprotein-global-sprite.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: -155px 0;
+
+}
+.rating-stars {
+    width:68px;
+    height:14px;
+    background-image: url("../img/myprotein-global-sprite.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 -115px;
+}
+
+
+.availablity {
+    max-width:1200px;
+    padding:20px 10px;
+    margin:0;
+    font-size:12px;
+    font-weight:200;
+    display:block;
+}
+
+.product-selection {
+    background-color:#f3f3f3;
+    max-width:1200px;
+    padding: 20px;
+
+}
+
+.product-variations {
+    max-width:1200px;
+  &__dropdown{
+    margin: 0 0 10px;
+  }
+}
+
+
+
+select {
+    display: block;
+    width: 100%;
+    padding-left: 5px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    text-transform: none;
+}
+
+
+
+.product-promo {
+    display: block;
+    max-width:1200px;
+    margin:20px;
+    padding:1em;
+    border: 1px solid #005b9b;
+    background-color: transparent;
+    color: #0076be;
+    text-align:center;
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  h3 {
+    color: #0076be;
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  a {
+    color:$brand-color-a;
+    font-size:1.2em;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+
+
+.panel {
+    display: block;
+    width:210px;
+
+    &__head {
+    margin:0;
+    color:#495f73;
+    background-color: #f1f2f2;
+
+    h2 {
+      font-size: 16px;
+      text-transform: initial;
+      padding: 12px 20px;
+      margin: 0;
+      font-weight:200;
+    }
+
+    }
+
+    .item-highlight {
+      height:100px;
+      border: 1px solid #f1f2f2;
+      border-top:0;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  margin:0;
+  width:100%;
+  background-color:#495F73;
+  height:150px;
+}
+  .copyright{
+    margin:0;
+    width:100%;
+    padding:0px 20px;
+    background-color:#303E4B;
+    height:100px;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

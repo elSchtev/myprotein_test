@@ -1,3 +1,20 @@
 // ==========================================================================
 // Header
 // ==========================================================================
+
+
+.header {
+  margin:0;
+  width:100%;
+  padding:15px 20px;
+  background-color: $brand-color-a;
+}
+
+.logo-container {
+    width:92px;
+    height:23px;
+    background-image: url("../img/myprotein-global-sprite.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 -90px;
+  }

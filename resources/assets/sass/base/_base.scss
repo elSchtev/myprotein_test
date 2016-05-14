@@ -3,8 +3,8 @@
 // ==========================================================================
 
 html, body, ul, ol {
-font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-line-height:1.5;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  line-height:1.5;
 }
 
 body {
@@ -12,8 +12,8 @@ body {
   padding:0px;
   margin:0px;
 }
+  
 
-div,
 article,
 aside,
 details,
@@ -30,129 +30,124 @@ summary {
   display: block;
 }
 
-
 p {
   font-weight:normal;
-  margin:.5em;
-
+  margin-bottom:.5em;
 }
 
-.header {
-  margin:0;
-  width:100%;
-  padding:0px 20px;
-  background-color: $brand-color-a;
-  height:50px;
-}
+// ========================================================
+// Container Block 
+// ========================================================
 
 .container {
   max-width: 1200px;
   margin: auto;
   clear: left;
-  
  } 
-
-
-.logo-container {
-    width:92px;
-    height:23px;
-    background-image: url("../img/myprotein-global-sprite.png");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: 0 -90px;
-
-
-  }
-
 
 .breadcrumbs {
   margin:0px;
-  height:35px;
   color: #696969;
   font-size:12px;
-  padding-left:20px;
-
-  p {  @include vertical-align();
-    }
+  padding:5px 0 5px 20px; 
 }
 
-.rule {
-  background-color: #cccccc;
-  width:100%;
-  height:2px;
-  max-width: 1200px;
-  margin: auto;
-
-}
+// ========================================================
+// Product Title 
+// ========================================================
 
 .product-title {
   background-color: $brand-color-a;
-  height:63px;
-  margin:0px;
+  padding:15px 0 15px;
+  margin:0;
+
+  @media only screen and (min-width: 768px) {
+    background-color: #fff;
+    padding:0px 0 0px;
+    width:37%;
+    padding-left:34%;
+  }
  
- h1 {
-  font-size:16px;
-  font-weight:400;
-  color: #fff;
-  padding-left:20px;
-  @include vertical-align();
-  margin:0px;
-  text-transform: uppercase; 
- }
+  h1 {
+    font-size:16px;
+    font-weight:400;
+    color: #fff;
+    padding-left:20px;
+    margin:0px;
+    text-transform: uppercase;
+
+    @media only screen and (min-width: 768px) {
+      font-size:20px;
+      font-weight:600;
+      color:$brand-color-a;
+      padding-left:0px;
+    }
+  }
 }
 
-.product-subtitle {
-  width:250px;
-  margin:0px;
-  height:30px;
-  padding-left:20px;
-  float:left;
+// ========================================================
+// Product Sub Title 
+// ========================================================
 
+
+.product-subtitle {
+  color:#666;
+  margin:auto;
+  margin:0px;
+  padding:10px 10px 0 20px;
+
+  @media only screen and (min-width: 768px) {
+    padding: 0px 10px 0 34%;
+    width:37%;
+  }
   
   h2 {
     margin:0;
-    padding:5px 0 0;
     font-size:14px;
     font-weight: 500;
+    float:left;    
   }
 }
+
+// ========================================================
+// Diet Icons
+// ========================================================
 
 .diet-icons{
-  margin:0;
-  padding:2px 0px; 
-  width:58px; 
-  float:left;
-
-
-  ul{
-    width:25px;
-    height:25px;
-    padding:0; 
-    margin:0; 
-    list-style:none; 
-    border:0; 
-    float:left;
+  margin:0px;
+  padding:0px 0px;
+  float:right;
+  
+  @media only screen and (min-width: 768px) {
+    padding: 0px 0 0 0;
   }
 
-  li{
-    width:25px;
-    height:25px;
+  ul {
     padding:0; 
-    margin:0 2px 0 2px; 
-    list-style:none; 
-    border:0; 
-    float:left;
+    margin:0;
+  }
+
+  li {
+    margin:0px 10px 0 0;
+    list-style-type: none;
+    display:inline-block;
+
+    &:first-child {
+    margin-right:0;    
+    }
+  
+    @media only screen and (min-width: 768px) {
+      margin-right:0;
+    }
   }
 }
 
-.icon-glutten-free {
+.icon-glutten-free, .icon-glutten-free:hover span {
     width:25px;
     height:25px;
     background-image: url("../img/sprite.png");
     background-color: transparent;
     background-position: -243px -587px;
-
-
 }
 
 .icon-vegitarian {
@@ -164,37 +159,42 @@ p {
 }
 
 
+// ========================================================
+// Product Image 
+// ========================================================
+
 .product-image {
   max-width:1200px;
-  margin: 20px;
+  margin: 0px 20px 20px 20px;
   border: 1px solid #dcdcdc;
   text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    margin:-55px 20px 20px;
+  }
   
-  img{
+  img {
     border:none;
-    width:300px;
-    height:300px;
+    width:100%;
+    max-width:300px;
     margin: auto;
+    display: block;
   }
 }
 
+// ========================================================
+// Product Info
+// ========================================================
+
 .product-info {
   max-width:1200px;
+  padding: 0px 0 0 0;
   text-align: center;
-   
-    .was {
-      color:#817d7e;
-      font-weight:400;
-      padding:0 5px;
-    }
-    .strike {
-      text-decoration: line-through;
-    }
-    .save {
-      color:red;
-      font-weight:400;
-      padding:0 5px;
-    }
+
+  @media only screen and (min-width: 768px) {
+    text-align:left;
+    padding: 0px 0 0 0;
+  }
   
   .price {
     text-align: center;
@@ -202,87 +202,202 @@ p {
     color:$brand-color-a;
     font-size:20px;
     font-weight:600;
-  }
 
+    @media only screen and (min-width: 768px) {
+      text-align:left;
+    }
+  }
 }
 
+// ========================================================
+// Star Rating 
+// ========================================================
+
 .rating {
-    max-width:1200px;
-    text-align: center;
-    margin: auto;
-    width:75px;
-    height:14px;
-    font-size:12px;
-    font-weight:200;
+  margin:auto;
+  font-size:12px;
+  font-weight:200;
+
+  @media only screen and (min-width: 768px) {
+    margin:0;
+  }
 }
 
 .rating-stars-container {
-    margin: auto;
-    width:75px;
-    height:14px;
-    background-image: url("../img/myprotein-global-sprite.png");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: -155px 0;
-
-}
-.rating-stars {
-    width:68px;
-    height:14px;
-    background-image: url("../img/myprotein-global-sprite.png");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: 0 -115px;
-}
-
-
-.availablity {
-    max-width:1200px;
-    padding:20px 10px;
+  width:75px;
+  height:14px;
+  background-image: url("../img/myprotein-global-sprite.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: -155px 0;
+  display:inline-block;
+    
+  @media only screen and (min-width: 768px) {
     margin:0;
-    font-size:12px;
-    font-weight:200;
-    display:block;
-}
-
-.product-selection {
-    background-color:#f3f3f3;
-    max-width:1200px;
-    padding: 20px;
-
-}
-
-.product-variations {
-    max-width:1200px;
-  &__dropdown{
-    margin: 0 0 10px;
   }
 }
 
-
-
-select {
-    display: block;
-    width: 100%;
-    padding-left: 5px;
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: #fff;
-    text-transform: none;
+.rating-stars {
+  width:68px;
+  height:14px;
+  background-image: url("../img/myprotein-global-sprite.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 -115px;
 }
 
+.rating-reviews {
+  width:50px;
+  font-size:12px;
+  font-weight:200;
+  display:inline-block;
+  text-align:left;
 
+  @media only screen and (min-width: 768px) {
+    margin:0;
+    text-align:left;
+  }
+}
+
+// ========================================================
+// Availability
+// ========================================================
+
+.availablity {
+  max-width:1200px;
+  padding:10px 0px;
+  margin:0;
+  font-size:12px;
+  font-weight:200;
+  display:block;
+}
+
+// ========================================================
+// Product Selection 
+// ========================================================
+
+.product-selection {
+  background-color:#f3f3f3;
+  max-width:1200px;
+  padding: 20px;
+
+  @media only screen and (min-width: 768px) {
+    background-color:#fff;
+    padding: 0px;
+  }
+}
+
+.product-variations {
+  max-width:1200px;
+  font-size:16px;
+  @media only screen and (min-width: 768px) {
+    font-size:14px;
+  }
+}
+
+.product-variations__dropdown{
+  margin: 0 0 10px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding-left: 5px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+
+  @media only screen and (min-width: 768px) {
+    width: 80%;
+    height: 30px;
+  }
+}
+
+// ========================================================
+// Related Products
+// ========================================================
+
+.panel {
+  display: none;
+  margin:20px;
+    
+  @media only screen and (min-width: 768px) {
+    display:block;
+    margin-top:-55px;
+  }
+}
+
+.panel__head {
+  margin:0;
+  color:#495f73;
+  background-color: #ddd;
+
+  h2 {
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 0;
+    font-weight:200;
+  }
+}
+    
+.item-highlight {
+  border: 1px solid #ddd;
+  border-top:0;
+  padding:10px;
+  vertical-align: top;
+}
+
+.item-highlight--img {
+  max-width:70px;
+  border:0;
+  display: inline-block;
+  vertical-align: top;
+
+  img{
+    width:auto;
+    max-width:70px;
+    border:0;
+  }
+}
+
+.item-highlight--info {
+  width:auto;
+  border:0;
+  display: inline-block;
+  vertical-align: top;
+
+  p {
+    font-size: 14px;
+    font-weight:200;
+    color:#495f73;
+    margin:0;
+  }
+
+  span {
+    font-size: 16px;
+    font-weight:400;
+    color:#495f73;
+  }
+}
+
+// ========================================================
+// Product Promotion 
+// ========================================================
 
 .product-promo {
     display: block;
     max-width:1200px;
     margin:20px;
-    padding:1em;
+    padding:20px;
     border: 1px solid #005b9b;
-    background-color: transparent;
     color: #0076be;
     text-align:center;
+
+    @media only screen and (min-width: 768px) {
+      margin:20px 0;
+      width:75%;
+    }
 
   p {
     font-size: 14px;
@@ -291,76 +406,62 @@ select {
   
   h3 {
     color: #0076be;
-    font-size: 1em;
+    font-size: 18px;
     font-weight: 700;
+    margin:0;
   }
 
   a {
     color:$brand-color-a;
-    font-size:1.2em;
+    font-size:18px;
     cursor: pointer;
     text-decoration: none;
   }
 }
 
 
+// ========================================================
+// GRID & Columns 
+// ========================================================
 
-.panel {
-    display: block;
-    width:210px;
 
-    &__head {
-    margin:0;
-    color:#495f73;
-    background-color: #f1f2f2;
-
-    h2 {
-      font-size: 16px;
-      text-transform: initial;
-      padding: 12px 20px;
-      margin: 0;
-      font-weight:200;
-    }
-
-    }
-
-    .item-highlight {
-      height:100px;
-      border: 1px solid #f1f2f2;
-      border-top:0;
-
-    }
+.grid {
+  max-width:1200px;
+  margin:auto;
 }
 
+.col {
+  float:left;
+  margin-right:1%;
 
-
-
-
-
-
-
-
-
-
-.footer {
-  margin:0;
-  width:100%;
-  background-color:#495F73;
-  height:150px;
-}
-  .copyright{
-    margin:0;
-    width:100%;
-    padding:0px 20px;
-    background-color:#303E4B;
-    height:100px;
-
+  &:last-child{
+    margin-right:0;
   }
+}
 
+.col--images {
+  width:100%;
 
+  @media only screen and (min-width: 768px) {
+    width:33%;
+  }
+}
 
+.col--details {
+  width:100%;
+  
+  @media only screen and (min-width: 768px) {
+    width:40%;
+  }
+}
 
+.col--related {
+  width:100%;
 
+  @media only screen and (min-width: 768px) {
+    width:25%;
+  }
+}
 
 
 

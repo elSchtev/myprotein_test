@@ -363,6 +363,7 @@ select {
 
 .item-highlight--info {
   width:auto;
+  max-width:50%;
   border:0;
   display: inline-block;
   vertical-align: top;
@@ -386,7 +387,6 @@ select {
 // ========================================================
 
 .product-promo {
-    display: block;
     max-width:1200px;
     margin:20px;
     padding:20px;
@@ -460,6 +460,10 @@ select {
 
   @media only screen and (min-width: 768px) {
     width:25%;
+  }
+  
+  @media only screen and (max-width: 845px) {
+    display:none;
   }
 }
 

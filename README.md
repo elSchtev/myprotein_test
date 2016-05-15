@@ -1,5 +1,4 @@
-# THG MyProtein Product Page
-description of task
+# THG MyProtein - Product Page
 
 As i've been coding table based emails for over six years my knowledge of front end design is far from where it should be. I've had to learn alot to get as far as I have with this task. It's been a great execise to get me started with the foundations of front end design. Listed below is how i've managed my time.
 
@@ -29,8 +28,10 @@ Looked into how HTML5 now uses semantically valuable elements
 <Header>, <Footer>,<Aside>,<Article>,<Section>,<Figure>,<Nav>
 I havn't quite got my head around using these so want to continue to research <http://html5doctor.com/article-archive/>
 
+---
+
 ### MyProtein Product page
-Look at the sent over [webpage](http://www.myprotein.com/sports-nutrition/impact-whey-protein/10530943.html) and noticed the css uses a mixture of “-” dashes and caps to separate the name attributes, could implement a mixture of SMACSS and BEM.
+Looked at the sent over [webpage](http://www.myprotein.com/sports-nutrition/impact-whey-protein/10530943.html) and noticed the css uses a mixture of “-” dashes and caps to separate the name attributes, could implement a mixture of SMACSS and BEM.
 
 The site links to an alternative site for mobiles,
 <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.myprotein.com/sports-nutrition/impact-whey-protein/10530943.html">
@@ -41,3 +42,19 @@ Also links to separate site for different languages
 Fully Responsive v’s Mobile site - Maintenance easier - all content is working towards same goal - not having to optimise 2 different versions of the site.
 
 Potential duplicate content issue.
+
+---
+
+### The build
+Concentrating on the 'product-content' section:
+- make sections responsive
+- product-promo to pop-up on desktop (if i have time to figure out either with css or javaScript)
+- JavaScript to create dropdown options (this might something I'll have to look into after this test)
+
+
+I've made various comments within the code to highlight why I have done things the way I have.
+
+
+
+
+

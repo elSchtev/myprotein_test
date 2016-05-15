@@ -28,8 +28,7 @@ Note: Would like to spend more time reading and getting familiar with this.
 
 ### HTML5
 Researched how HTML5 now uses semantically valuable elements 
-Header, Footer, Aside, Article, Section, Figure ,Nav
-Will continue to research <http://html5doctor.com/article-archive/>
+Header, Footer, Aside, Article, Section, Figure, Nav. Will continue to research <http://html5doctor.com/article-archive/>
 
 ---
 

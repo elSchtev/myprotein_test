@@ -169,6 +169,12 @@ p {
   border: 1px solid #dcdcdc;
   text-align: center;
 
+// ========================================================
+// To get certain containers where I want them when viewed
+// on different devices i've used negative values. I understand
+// that people have spit vues of this. 
+// ========================================================
+
   @media only screen and (min-width: 768px) {
     margin:-55px 20px 20px;
   }
@@ -425,6 +431,7 @@ select {
 // ========================================================
 
 
+
 .grid {
   max-width:1200px;
   margin:auto;
@@ -462,6 +469,15 @@ select {
     width:25%;
   }
   
+// ========================================================
+// I found that the related product container 
+// looked messy once the browser window reduced in size
+// I've used a bespoke screen size to hide the related
+// product container, I understand that this could lead to 
+// difficulties when trying to maintain.
+// ========================================================
+
+
   @media only screen and (max-width: 845px) {
     display:none;
   }

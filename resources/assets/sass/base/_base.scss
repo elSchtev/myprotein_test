@@ -142,7 +142,7 @@ p {
   }
 }
 
-.icon-glutten-free, .icon-glutten-free:hover span {
+.icon-glutten-free {
     width:25px;
     height:25px;
     background-image: url("../img/sprite.png");
@@ -223,6 +223,7 @@ p {
   }
 }
 
+
 .rating-stars-container {
   width:75px;
   height:14px;
@@ -230,7 +231,6 @@ p {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: -155px 0;
-  display:inline-block;
     
   @media only screen and (min-width: 768px) {
     margin:0;
